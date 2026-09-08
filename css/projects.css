@@ -1,0 +1,40 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project {
+    padding-block: var(--space-4);
+    border-top: 1px solid var(--border);
+  }
+  
+  .project:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .project__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  
+  .project__head h3 {
+    max-width: 55ch;
+  }
+  
+  .project__date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  
+  .project__desc {
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 72ch;
+    margin-bottom: var(--space-2);
+  }

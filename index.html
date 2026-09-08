@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/projects.css" />
 </head>
 <body>
 
@@ -91,8 +92,8 @@
               <p class="timeline__date">July 2026 – Present</p>
               <h3 class="timeline__role">Software and Data Engineering Intern</h3>
               <p class="timeline__org">SecurKart · Rocky Hill, CT</p>
-              <p class="timeline__desc">Migrating the company's data collection pipeline from an email-based workflow to a structured database system. Designing and building backend data pipelines using SQL and source control, and independently developing the full-stack data infrastructure for the company's website — working closely with the team to ship a production-ready solution.</p>
-              <ul class="timeline__tags">
+              <p class="timeline__desc">Migrating the company's data collection pipeline from an email-based workflow to a structured database system. Designing and building backend data pipelines using SQL and source control, and independently developing the full-stack data infrastructure for the company's website, working closely with the team to ship a production-ready solution.</p>
+              <ul class="tags">
                 <li>SQL</li>
                 <li>Backend Pipelines</li>
                 <li>Git</li>
@@ -108,7 +109,7 @@
               <h3 class="timeline__role">Undergraduate Research Assistant</h3>
               <p class="timeline__org">University of Connecticut · Storrs, CT</p>
               <p class="timeline__desc">Writing Python workflows to process microbiome sequencing data and compute UniFrac distance metrics for analyzing microbial community structure, applying machine learning and statistical methods to surface patterns in complex metabolic datasets. Regularly present findings to both technical and non-technical audiences.</p>
-              <ul class="timeline__tags">
+              <ul class="tags">
                 <li>Python</li>
                 <li>Machine Learning</li>
                 <li>Statistical Analysis</li>
@@ -126,7 +127,63 @@
         <div class="section-heading">
           <h2 class="section-heading__title">Projects</h2>
         </div>
-        <p>[ Projects layout — built next ]</p>
+
+        <div class="projects">
+          <article class="project">
+            <div class="project__head">
+              <h3>Gender Variation Project — Computational Text Analysis Research</h3>
+              <p class="project__date">June 2026 – Present</p>
+            </div>
+            <p class="project__desc">An ongoing research project analyzing publication trends and linguistic patterns across a corpus of 600+ science fiction stories, broken down by author pronoun groups. I built the Python pipeline for the NLP and time series analysis, cleaned and merged metadata with text-derived features in Pandas, and evaluated different stemming algorithms and unigram/bigram representations to figure out which preprocessing approach actually held up for this kind of corpus.</p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>NLP</li>
+              <li>Pandas</li>
+              <li>Time Series Analysis</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>GreenCart</h3>
+              <p class="project__date">January 2026 – May 2026</p>
+            </div>
+            <p class="project__desc">A full-stack marketplace connecting buyers directly with farmers, built with React, Flask, SQLite, and Docker. It handles user authentication, product inventory management, and a full order lifecycle with inventory reservation baked in. I also built a recommendation engine using semantic similarity to surface products based on what a user's actually shopping for, rather than just generic bestsellers.</p>
+            <ul class="tags">
+              <li>React</li>
+              <li>Flask</li>
+              <li>SQLite</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>Academic Advisor Chat Bot</h3>
+              <p class="project__date">January 2026 – May 2026</p>
+            </div>
+            <p class="project__desc">A chatbot designed to route student advising questions to the right place. I built the neural network component that handles intent classification, and worked through a direct comparison between neural network and decision tree approaches to see which held up better for this use case. A good chunk of the project was in the data itself — preprocessing and analyzing training data to get model input quality high enough that the classifiers could actually be compared fairly across intent categories.</p>
+            <ul class="tags">
+              <li>Neural Networks</li>
+              <li>NLP</li>
+              <li>Intent Classification</li>
+              <li>Data Preprocessing</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3>Wildfire Risk Forecasting</h3>
+              <p class="project__date">September 2025 – December 2025</p>
+            </div>
+            <p class="project__desc">Built a Random Forest classifier to predict wildfire risk and benchmarked it against alternative models, evaluating performance with AUC, confusion matrices, and classification reports. The more interesting part was going beyond the metrics — using lift and cumulative lift charts to dig into the false positives and false negatives and understand what those errors would actually mean in a real-world deployment.</p>
+            <ul class="tags">
+              <li>Random Forest</li>
+              <li>Model Evaluation</li>
+              <li>Python</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 

@@ -199,7 +199,21 @@ section:nth-of-type(even) {
   margin-bottom: var(--space-1);
 }
 
-/* ---------- Buttons (shared: About, Contact) ---------- */
+/* ---------- Shared tag pills (Experience, Projects) ---------- */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tags li {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+}
 
 .btn {
   display: inline-flex;

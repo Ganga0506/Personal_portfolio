@@ -54,20 +54,6 @@
     margin-bottom: var(--space-2);
   }
   
-  .timeline__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-  
-  .timeline__tags li {
-    font-size: 0.75rem;
-    padding: 0.2rem 0.6rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    color: var(--text-muted);
-  }
-  
   @media (max-width: 560px) {
     .timeline__item {
       grid-template-columns: 16px 1fr;
