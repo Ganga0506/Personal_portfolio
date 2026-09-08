@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Personal portfolio of Your Name." />
+  <title>Ganga — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ganga, Data Science and Engineering student at the University of Connecticut." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
 <body>
 
   <nav class="site-nav" aria-label="Primary">
-    <a href="#about" class="site-nav__mark">YN</a>
+    <a href="#about" class="site-nav__mark">GANGA</a>
 
     <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">
       ☰
@@ -26,6 +27,7 @@
     <div class="site-nav__links" data-nav-links>
       <a href="#about" class="site-nav__link">About</a>
       <a href="#experience" class="site-nav__link">Experience</a>
+      <a href="#projects" class="site-nav__link">Projects</a>
       <a href="#skills" class="site-nav__link">Skills</a>
       <a href="#contact" class="site-nav__link">Contact</a>
       <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
@@ -39,8 +41,38 @@
 
     <!-- ================= ABOUT ================= -->
     <section id="about">
-      <div class="container container--wide">
-        <p class="text-muted">[ About section — photo + intro — built next ]</p>
+      <div class="container container--wide about">
+        <div class="about__text">
+          <h1>Hi, I'm Ganga.</h1>
+          <p class="about__role">Data Science &amp; Engineering student · University of Connecticut (Honors Program) · Class of 2028</p>
+
+          <p>Most of what I do comes back to the same question: how do you take a pile of messy data and actually get something useful out of it. Lately that's meant building machine learning models, working with microbiome sequencing data as an undergraduate researcher, and building full-stack applications from scratch.</p>
+
+          <p>My work spans NLP, statistical modeling, and software engineering, and I like projects that force me to connect theory with something people can actually use — from a marketplace app for farmers and buyers to an academic advising chatbot. Outside of coding, I write for UConn's student science journal, mentor first-year students, and help run events for the Data Science Club.</p>
+
+          <div class="about__links">
+            <a href="#" class="btn btn--primary">
+              <span>View Resume</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#" class="btn">
+              <span>LinkedIn</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#" class="btn">
+              <span>GitHub</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#" class="btn">
+              <span>Email</span>
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about__photo">
+          <span>[ Photo ]</span>
+        </div>
       </div>
     </section>
 
@@ -51,6 +83,16 @@
           <h2 class="section-heading__title">Experience</h2>
         </div>
         <p>[ Timeline layout — built next ]</p>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+      <div class="container container--wide">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Projects</h2>
+        </div>
+        <p>[ Projects layout — built next ]</p>
       </div>
     </section>
 
