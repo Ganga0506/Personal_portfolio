@@ -1,0 +1,29 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4) var(--space-5);
+  }
+  
+  .skill-group {
+    padding-left: var(--space-2);
+    border-left: 2px solid var(--accent-soft);
+  }
+  
+  .skill-group h3 {
+    margin-bottom: var(--space-1);
+    font-size: 1rem;
+  }
+  
+  .skill-group__list {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+  
+  .skill-group__list li:not(:last-child)::after {
+    content: '·';
+    color: var(--accent-2);
+    margin: 0 0.55em;
+    font-weight: 600;
+  }
