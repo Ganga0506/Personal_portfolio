@@ -1,0 +1,71 @@
+#tech-stack {
+    background: color-mix(in srgb, var(--accent-soft) 18%, var(--bg));
+    padding-block: var(--space-5) var(--space-6);
+  }
+  
+  #tech-stack .section-heading {
+    margin-bottom: var(--space-3);
+  }
+  
+  .conveyor {
+    overflow: hidden;
+    width: 100%;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 6%,
+      black 94%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 6%,
+      black 94%,
+      transparent
+    );
+  }
+  
+  .conveyor__track {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    width: max-content;
+    padding-inline: var(--space-3);
+    animation: conveyor-scroll 38s linear infinite;
+  }
+  
+  .conveyor:hover .conveyor__track {
+    animation-play-state: paused;
+  }
+  
+  .conveyor__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 auto;
+  }
+  
+  .conveyor__item img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.85;
+  }
+  
+  .conveyor__item span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+  
+  @keyframes conveyor-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      /* exactly one full set of items wide, since the track holds two
+         identical sets back to back — this is what makes the loop seamless */
+      transform: translateX(-50%);
+    }
+  }
