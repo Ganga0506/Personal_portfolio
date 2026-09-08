@@ -7,9 +7,21 @@
     margin-bottom: var(--space-3);
   }
   
+  /* Row holding the two stationary arrows + the scrolling viewport between them.
+     This whole row lives inside .container--wide, so it shares the exact
+     max-width and side padding as Experience/Projects/Skills. */
+  .conveyor-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  
+  /* Viewport — clips the track. The arrows sit outside this element,
+     so they are never part of the moving/animated content. */
   .conveyor {
     overflow: hidden;
-    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
     mask-image: linear-gradient(
       to right,
       transparent,
@@ -31,12 +43,9 @@
     align-items: center;
     gap: var(--space-5);
     width: max-content;
-    padding-inline: var(--space-3);
-    animation: conveyor-scroll 38s linear infinite;
-  }
-  
-  .conveyor:hover .conveyor__track {
-    animation-play-state: paused;
+    will-change: transform;
+    /* position is set by js/conveyor.js on every frame — no CSS animation
+       here, since the arrow buttons need to change speed dynamically */
   }
   
   .conveyor__item {
@@ -59,13 +68,42 @@
     white-space: nowrap;
   }
   
-  @keyframes conveyor-scroll {
-    from {
-      transform: translateX(0);
+  /* Stationary arrow buttons — small, quiet, sit just outside the viewport */
+  .conveyor-btn {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--accent);
+    font-size: 0.95rem;
+    line-height: 1;
+    transition: background var(--transition), border-color var(--transition),
+      transform var(--transition);
+  }
+  
+  .conveyor-btn:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent-2);
+    transform: translateY(-2px);
+  }
+  
+  .conveyor-btn:active {
+    transform: translateY(0) scale(0.92);
+  }
+  
+  @media (max-width: 560px) {
+    .conveyor-row {
+      gap: var(--space-1);
     }
-    to {
-      /* exactly one full set of items wide, since the track holds two
-         identical sets back to back — this is what makes the loop seamless */
-      transform: translateX(-50%);
+  
+    .conveyor-btn {
+      width: 28px;
+      height: 28px;
+      font-size: 0.85rem;
     }
   }
