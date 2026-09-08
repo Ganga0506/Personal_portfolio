@@ -1,13 +1,14 @@
 :root {
-  /* Color — light (default) */
-  --bg: #F6F7F9;
-  --bg-alt: #ECEEF1;
+  /* Color — light (Forest + Cream) */
+  --bg: #F7F5EF;
+  --bg-alt: #F0ECE1;
   --surface: #FFFFFF;
-  --text: #1D242E;
-  --text-muted: #5B6570;
-  --accent: #35566E;
-  --accent-soft: #E4EAEF;
-  --border: #D8DCE1;
+  --text: #252525;
+  --text-muted: #5B625C;
+  --accent: #173B2F;        /* deep forest — headings, nav, buttons */
+  --accent-2: #6B8F71;      /* sage — hover states, icons */
+  --accent-soft: #A8C3A0;   /* soft green — hairlines, quiet tints */
+  --border: #E4E0D3;
 
   /* Type */
   --font-heading: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -25,19 +26,20 @@
   /* Layout */
   --max-width: 780px;
   --max-width-wide: 980px;
-  --nav-height: 64px;
+  --nav-clearance: 96px; /* space reserved below the floating pill nav */
 
   --radius: 6px;
   --transition: 180ms ease;
 }
 
 [data-theme="dark"] {
-  --bg: #12161C;
-  --bg-alt: #171C24;
-  --surface: #1A1F27;
-  --text: #E4E8EC;
-  --text-muted: #8D97A3;
-  --accent: #7FB0CF;
-  --accent-soft: #1E2A33;
-  --border: #262D37;
+  --bg: #121614;
+  --bg-alt: #171C19;
+  --surface: #1B211E;
+  --text: #F2F4F1;
+  --text-muted: #A8B0AA;
+  --accent: #4FAF78;
+  --accent-2: #8FD3A8;
+  --accent-soft: #2A3A31;
+  --border: #2A322E;
 }
