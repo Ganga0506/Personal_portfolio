@@ -42,7 +42,7 @@ After that, every push to `main` triggers `.github/workflows/deploy.yml`,
 which publishes the site to:
 
 ```
-https://<your-username>.github.io/portfolio/
+https://ganga0506.github.io/portfolio/
 ```
 
 All asset paths in `index.html` are relative (`css/...`, `js/...`,
@@ -54,3 +54,4 @@ without any extra config.
 Skeleton stage — nav, theming, and layout shell are in place. Each section
 (About, Experience, Skills, Tech Stack, Contact) still has placeholder
 content, to be filled in section by section.
+
