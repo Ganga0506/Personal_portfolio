@@ -32,13 +32,6 @@
     line-height: 1.65;
   }
   
-  .about__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    margin-top: var(--space-2);
-  }
-  
   .about__photo {
     aspect-ratio: 4 / 5;
     width: 100%;
